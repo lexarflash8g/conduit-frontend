@@ -31,7 +31,7 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        #host: ${{ secrets.STAGING_HOST }}
+        host: ${{ secrets.STAGING_HOST }}
         host: development.pipelines.media
         username: ubuntu
         key: ${{ secrets.KEY }}
