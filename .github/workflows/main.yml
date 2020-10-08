@@ -38,9 +38,9 @@ jobs:
         port: 22
         script: |
           ls -la
-          cd /home/ubuntu/conduit-microservices/conduit-backend
-          git pull
-          cd ..
+          #cd /home/ubuntu/conduit-microservices/conduit-backend
+          git clone https://www.github.com/lexarflash8g/conduit
+          cd /conduit
           sudo docker-compose build
           sudo docker-compose down && sudo docker-compose up -d
         if: github.ref == 'refs/heads/development'
