@@ -32,7 +32,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.STAGING_HOST }}
-        host: development.pipelines.media
+        #host: development.pipelines.media
         username: ubuntu
         key: ${{ secrets.KEY }}
         port: 22
